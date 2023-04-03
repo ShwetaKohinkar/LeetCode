@@ -8,8 +8,6 @@ public class LongestCommonPrefix {
         System.out.println( function(strs));
     }
 
-
-
     public static String function(String[] strs) {
         Arrays.sort(strs);
 
@@ -27,5 +25,4 @@ public class LongestCommonPrefix {
         }
         return s1.substring(0, count);
     }
-
 }
