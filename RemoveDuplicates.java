@@ -10,20 +10,16 @@ public class RemoveDuplicates {
 
 
     public static int function(int[] nums) {
-        int count = 0;
+        int count = 1;
 
-        for (int i =0; i<nums.length;i++)
+        for (int i =1; i<nums.length;i++)
         {
-            if(i > 0 && nums[count-1] < nums[i] )
+            if(nums[count-1] < nums[i] )
             {
                 nums[count] = nums[i];
                 count++;
             }
-            else if(i==0)
-            {
-                nums[0] = nums[i];
-                count++;
-            }
+
         }
         return count;
     }
