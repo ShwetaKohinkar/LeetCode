@@ -1,12 +1,15 @@
+
 public class LeftRightDifference {
 
     public static void main(String[] args)
     {
         int[] strs = new int[]{8,5,2,1,3,4};
-
+        leftRightDifference(strs);
 
     }
     public static int[] leftRightDifference(int[] nums) {
+
+
 
         int n = nums.length;
         int[] leftSum = new int[n];
